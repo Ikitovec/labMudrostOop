@@ -42,6 +42,7 @@ class cont():
 
                     # shape in
                     # type=shape_in.determine_shape(container,j)
+                    self.container[j].printMe(fout)
                     if self.container[j].index == '0':
                         fout.write(f'\n{j}: Это цитата: {self.container[j].country} - {self.container[j].content}')
                     elif self.container[j].index == '1':
