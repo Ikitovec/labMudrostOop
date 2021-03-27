@@ -11,21 +11,21 @@ class cont():
                 for line in fin.readlines():
                     part = line.split("|")
                     if part[0] == '0':
-                        self.container[i] = testing_class_constr.Aforizm(part[0], part[2], part[1])
+                        self.container[i] = testing_class_constr.Aforizm(part[0], part[2], part[3], part[1])
 
                         print(self.container[i].country)
                         i += 1
 
                     elif part[0] == '1':
 
-                        self.container[i] = testing_class_constr.Quot(part[0], part[2], part[1])
+                        self.container[i] = testing_class_constr.Quot(part[0], part[2], part[3], part[1])
 
                         print(self.container[i].name)
                         i += 1
 
                     elif part[0] == '2':
 
-                        self.container[i] = testing_class_constr.Riddle(part[0], part[2], part[1])
+                        self.container[i] = testing_class_constr.Riddle(part[0], part[2], part[3], part[1])
 
                         print(self.container[i].answer)
                         i += 1
