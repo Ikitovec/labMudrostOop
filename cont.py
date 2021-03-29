@@ -97,8 +97,8 @@ class cont():
 
         for i in range(razmernost - 1):
             for j in range(razmernost - i - 1):
-                if self.mark_for_sort(self.container[i]) > self.mark_for_sort(self.container[j]):
-                    self.container[i], self.container[j] = self.container[j], self.container[i]
+                if self.mark_for_sort(self.container[j]) < self.mark_for_sort(self.container[j+1]):
+                    self.container[j], self.container[j+1] = self.container[j+1], self.container[j]
 
     def filtered_output_by_quotation(self):
         razmernost = 0
