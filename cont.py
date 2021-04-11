@@ -1,6 +1,7 @@
 import testing_class_constr
 
-class cont():
+
+class сont():
     length=100
     container=['']*length
 
@@ -21,7 +22,6 @@ class cont():
                                             part[3] == '3\n') | (part[3] == '4\n') | (part[3] == '5\n') | (
                                             part[3] == '6\n') | (part[3] == '7\n') | (part[3] == '8\n') | (
                                             part[3] == '9\n') | (part[3] == '10\n')):
-
                                         if part[0] == '0':
                                             self.container[i] = testing_class_constr.Aforizm(part[0], part[2], part[3], part[1])
                                             i += 1
